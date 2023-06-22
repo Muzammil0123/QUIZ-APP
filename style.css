@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    
+}
+
+#index{
+    width:100%;
+    height:100vh;
+    background:url("https://www.investintech.com/resources/blog/wp-content/uploads/2021/09/Tech-Quiz-Test-Your-Knowledge-While-Having-Fun.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#navbar{
+    width:100%;
+    background-color: rgb(103, 119, 209);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding:10px;
+    
+    
+}
+
+#navbar a{
+    text-decoration: none;
+    color:white;
+    font-size:25px;
+    position: relative;
+    transition: 0.2s ease;
+    margin-right:150px;
+}
+ 
+#navbar a.active::after {
+    content:"";
+    width:70%;
+    background-color: aqua;
+    height:3px;
+    position: absolute;
+    bottom:-3px;
+    left:0px
+}
+#dp{
+    position: relative;
+}
+#drop{
+    position: absolute;
+    top:-100px;
+    background-color: white;
+    color:orange;
+    width:150px;
+    cursor: pointer;
+    
+}
+#drop a{
+    color:black;
+    
+}
+#navbar a#d{
+    margin-right:0px;
+}
+#dow{
+    margin-right:150px;
+}
+#main{
+    width:100%;
+    text-align: center;
+    margin-top:400px;
+}
+#main button{
+    padding:10px;
+    border-radius:10px;
+    font-size:20px;
+    background-color: cadetblue;
+    color:white;
+    border:0;
+}
+.back{
+    width:100%;
+    min-height:100vh;
+    background-color: rgb(216, 216, 193);
+}
+.contain{
+    padding:30px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contain .ele{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:250px;
+    height:300px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+.contain .ele img{
+    text-align: center;
+    width:90%;
+    height:90%;
+    border-radius:50%;
+}
+.contain .ele p{
+    font-size:30px;
+    font-weight:500;
+    text-align: center;
+}
+.cont{
+    width:60%;
+    margin:200px auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
