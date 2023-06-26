@@ -13,69 +13,29 @@
     background-size: cover;
 
 }
-#navbar{
-    width:100%;
-    background-color: rgb(103, 119, 209);
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding:10px;
-    
-    
-}
 
-#navbar a{
-    text-decoration: none;
-    color:white;
-    font-size:25px;
-    position: relative;
-    transition: 0.2s ease;
-    margin-right:150px;
-}
- 
-#navbar a.active::after {
-    content:"";
-    width:70%;
-    background-color: aqua;
-    height:3px;
-    position: absolute;
-    bottom:-3px;
-    left:0px
-}
-#dp{
-    position: relative;
-}
-#drop{
-    position: absolute;
-    top:-100px;
-    background-color: white;
-    color:orange;
-    width:150px;
-    cursor: pointer;
-    
-}
-#drop a{
-    color:black;
-    
-}
-#navbar a#d{
-    margin-right:0px;
-}
-#dow{
-    margin-right:150px;
-}
+
 #main{
     width:100%;
+    height: 100%;
     text-align: center;
-    margin-top:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #main button{
     padding:10px;
     border-radius:10px;
     font-size:20px;
-    background-color: cadetblue;
+    background-color: rgb(146, 193, 195);
     color:white;
     border:0;
+}
+#main button:hover{
+    background-color: aqua;
+}
+#main button:active{
+    transform: scale(0.95);
 }
 .back{
     width:100%;
@@ -114,4 +74,59 @@
     display: flex;
     flex-direction: column;
     font-size: 25px;
+}
+.quiz-container{
+    width:60%;
+    height:600px;
+    background-color: rgb(213, 213, 213);
+    margin:60px auto;
+}
+.circular-loader{
+    width:300px;
+    height:300px;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-loader::before{
+    content:"";
+    width:240px;
+    height:240px;
+    background-color:white;
+    position:absolute;
+    border-radius:50%;
+    top:30px;
+    left:30px;
+}
+.circular-loader p{
+    z-index: 20;
+    font-size:35px;
+}
+.appre{
+    font-size: 34px;
+}
+.quiz-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.quiz-container button{
+    background-color: rgb(182, 43, 182);
+    color:white;
+    padding:10px 10px;
+    border: 0;
+    font-size:20px;
+    border-radius: 10px;
+    
+}
+.quiz-container button:hover{
+    background-color: rgb(126, 17, 126);
+}
+.quiz-container button:active{
+    transform: scale(0.95);
 }
